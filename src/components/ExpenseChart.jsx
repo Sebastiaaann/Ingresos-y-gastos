@@ -26,7 +26,7 @@ export function ExpenseChart() {
       <div className="bg-zinc-900 p-4 my-2">
         <div className="h-full flex items-center justify-center w-full flex-col">
           <BsPieChartFill className="text-9xl" />
-          <h1 className="text-3xl font-bold my-2">No data yet</h1>
+          <h1 className="text-3xl font-bold my-2">Aún no hay datos</h1>
         </div>
       </div>
     );
@@ -37,8 +37,8 @@ export function ExpenseChart() {
       <VictoryPie
         colorScale={["#e74c3c", "#2ecc71"]}
         data={[
-          { x: "Expenses", y: expensesPercentage },
-          { x: "Incomes", y: incomesPercentage },
+          { x: "Gastos", y: expensesPercentage },
+          { x: "Ingreso", y: incomesPercentage },
         ]}
         animate={{
           duration: 2000,

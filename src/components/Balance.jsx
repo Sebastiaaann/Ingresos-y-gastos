@@ -8,7 +8,7 @@ export function Balance() {
 
   return (
     <div className="flex justify-between items-center my-2">
-      <h4 className="text-slate-400">Your Balance</h4>
+      <h4 className="text-slate-400">Tu Balance</h4>
       <h1 className="text-2xl font-bold">${total}</h1>
     </div>
   );
