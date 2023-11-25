@@ -20,6 +20,12 @@ function App() {
                 <IncomeExpenses />
                 <Balance />
                 <TransactionForm />
+                {/* Agrega el botón con el enlace externo */}
+                <a href="https://www.ejemplo.com" target="_blank" rel="noopener noreferrer">
+                  <button className="bg-indigo-700 text-white px-3 py-2 rounded-lg block mb-2 w-full">
+                    Volver a inicio
+                  </button>
+                </a>
               </div>
               <div className="flex-1 flex flex-col">
                 <ExpenseChart />
