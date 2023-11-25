@@ -6,8 +6,10 @@ import { TransactionList } from "./components/transactions/TransactionList";
 import { TransactionForm } from "./components/transactions/TransactionForm";
 import { ExpenseChart } from "./components/ExpenseChart";
 
+// Define el componente principal 'App'
 function App() {
   return (
+    // Usa el contexto GlobalProvider para envolver la aplicación
     <GlobalProvider>
       <div className="bg-neutral-950 text-white h-screen flex justify-center items-center">
         <div className="w-2/5 flex justify-center items-center">
@@ -30,5 +32,5 @@ function App() {
     </GlobalProvider>
   );
 }
-
+// Exporta el componente 'App' para su uso en otros componentes
 export default App;

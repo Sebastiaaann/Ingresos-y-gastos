@@ -1,24 +1,31 @@
 import { useState } from "react";
 import { useGlobalState } from "../../context/GlobalState";
 
+// Componente para el formulario de transacciones
 export function TransactionForm() {
+  // Obtener la función para agregar transacciones del estado global
   const { addTransaction } = useGlobalState();
 
+  // Estados locales para la descripción y el monto
   const [description, setDescription] = useState("");
   const [amount, setAmount] = useState(0);
 
+  // Función para manejar el envío del formulario
   const onSubmit = (e) => {
     e.preventDefault();
+    // Agregar una nueva transacción al estado global
     addTransaction({
-      id: window.crypto.randomUUID(),
+      id: window.crypto.randomUUID(), // Generar un ID único
       description,
-      amount: +amount,
+      amount: +amount, // Convertir a número
     });
 
+    // Limpiar los campos después de agregar la transacción
     setDescription("");
     setAmount(0);
   };
 
+  // Renderizar el formulario de transacciones
   return (
     <div>
       <form onSubmit={onSubmit}>

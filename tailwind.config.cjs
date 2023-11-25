@@ -6,3 +6,5 @@ module.exports = {
   },
   plugins: [],
 };
+
+// Tailwind CSS se centra en especificar los archivos que Tailwind debe analizar y proporciona una configuración básica sin extensiones del tema ni complementos adicionales.

@@ -1,10 +1,15 @@
 import { useGlobalState } from "../../context/GlobalState";
 import {BiTrash} from 'react-icons/bi'
 
+// Componente que representa un elemento de la lista de transacciones
 export function TransactionItem({ transaction: { id, description, amount } }) {
+  // Obtener la función de eliminar transacción del estado global
   const { deleteTransaction } = useGlobalState();
+
+  // Determinar el signo (+ o -) en función del monto
   const sign = amount < 0 ? "-" : "+";
 
+  // Renderizar un elemento de la lista de transacciones
   return (
     <li
       key={id}

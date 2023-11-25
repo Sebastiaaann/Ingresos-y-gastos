@@ -2,8 +2,10 @@ import { useGlobalState } from "../../context/GlobalState";
 import { TransactionItem } from "./TransactionItem";
 
 export function TransactionList() {
+  // Obtener las transacciones del estado global
   const { transactions } = useGlobalState();
 
+  // Verificar si no hay transacciones
   if (transactions.length === 0) {
     return (
       <div className="bg-zinc-900 p-4 my-2">
@@ -16,6 +18,7 @@ export function TransactionList() {
     );
   }
 
+  // Renderizar la lista de transacciones
   return (
     <div className="bg-zinc-900 p-4">
       <h3 className="text-slate-300 text-xl font-bold my-2 text-center">Historial</h3>
