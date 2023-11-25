@@ -32,7 +32,7 @@ export function TransactionForm() {
         <input
           type="text"
           onChange={(e) => setDescription(e.target.value)}
-          placeholder="ingrese un monto"
+          placeholder="coloque una descripcion"
           className="bg-zinc-600 text-white px-3 py-2 rounded-lg block mb-2 w-full"
           value={description}
         />

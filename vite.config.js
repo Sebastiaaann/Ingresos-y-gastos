@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/Ingresos-y-gastos/',
+  base: 'https://Sebastiaaann.github.io/Ingresos-y-gastos',
   plugins: [react()],
 })
 
