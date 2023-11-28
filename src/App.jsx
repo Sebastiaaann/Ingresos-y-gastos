@@ -21,7 +21,7 @@ function App() {
                 <Balance />
                 <TransactionForm />
                 {/* Agrega el botón con el enlace externo */}
-                <a href="https://www.ejemplo.com" target="_blank" rel="noopener noreferrer">
+                <a href="http://127.0.0.1:8000/" target="_blank" rel="noopener noreferrer">
                   <button className="bg-indigo-700 text-white px-3 py-2 rounded-lg block mb-2 w-full">
                     Volver a inicio
                   </button>
