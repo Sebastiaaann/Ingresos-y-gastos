@@ -7,4 +7,4 @@ export default defineConfig({
   plugins: [react()],
 })
 
-// Vite se centra en configurar un proyecto React y especificar la URL base del proyecto.
+// Vite se centra en configurar un proyecto React y especificar la URL base del proyecto...
